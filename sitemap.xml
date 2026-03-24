@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Remplacez https://votre-domaine.com/ par l'URL de publication du site -->
   <url>
-    <loc>https://codyshop.netlify.app/</loc>
+    <loc>https://cody-shop.netlify.app/</loc>
     <priority>1.00</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://codyshop.netlify.app/#products</loc>
+    <loc>https://cody-shop.netlify.app/#products</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://codyshop.netlify.app/#contact</loc>
+    <loc>https://cody-shop.netlify.app/#contact</loc>
     <priority>0.64</priority>
     <changefreq>weekly</changefreq>
   </url>

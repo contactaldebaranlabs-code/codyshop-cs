@@ -5,4 +5,4 @@ User-agent: *
 Allow: /
 
 # Indique l'emplacement du sitemap pour une indexation plus rapide
-Sitemap: https://codyshop.netlify.app/sitemap.xml
+Sitemap: https://cody-shop.netlify.app/sitemap.xml
