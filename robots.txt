@@ -1,0 +1,8 @@
+# Robots.txt pour les moteurs de recherche
+# Remplacez https://votre-domaine.com/ par votre URL réelle
+
+User-agent: *
+Allow: /
+
+# Indique l'emplacement du sitemap pour une indexation plus rapide
+Sitemap: https://codyshop.netlify.app/sitemap.xml

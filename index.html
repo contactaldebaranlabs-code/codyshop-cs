@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>codyshop - boutique en ligne à kinshasa</title>
+    <meta name="description" content="CodyShop Kinshasa est votre boutique en ligne pour les produits tech et gaming en RDC : ordinateurs, consoles, audio et accessoires. Livraison rapide à Kinshasa et service client premium.">
+    <meta name="keywords" content="Kinshasa, boutique en ligne, e-commerce RDC, tech, gaming, ordinateur, console, casque audio, accessoires, gadgets, livraison Kinshasa">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://codyshop.netlify.app/">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CodyShop Kinshasa | Boutique tech & gaming en ligne">
+    <meta property="og:description" content="Découvrez notre sélection de produits high-tech à Kinshasa : ordinateurs, accessoires gaming, audio premium et plus. Livraison rapide à Kinshasa.">
+    <meta property="og:url" content="https://codyshop.netlify.app/">
+    <meta property="og:image" content="https://codyshop.netlify.app/ product1.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CodyShop Kinshasa | Boutique tech & gaming en ligne">
+    <meta name="twitter:description" content="Découvrez notre sélection de produits high-tech à Kinshasa : ordinateurs, accessoires gaming, audio premium et plus. Livraison rapide à Kinshasa.">
+    <meta name="twitter:image" content="https://codyshop.netlify.app/ product1.jpg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "CodyShop Kinshasa",
+      "image": "https://codyshop.netlify.app/ product1.jpg",
+      "url": "https://codyshop.netlify.app/",
+      "telephone": "+243 99 999 9999",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Avenue du Commerce 123",
+        "addressLocality": "Kinshasa",
+        "addressRegion": "Kinshasa",
+        "postalCode": "00000",
+        "addressCountry": "CD"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "10:00",
+          "closes": "17:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/codyshopkinshasa",
+        "https://www.instagram.com/codyshopkinshasa",
+        "https://www.twitter.com/codyshopkinshasa"
+      ],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://codyshop.netlify.app/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+<body class="overlay-active">
+    <div id="site-overlay" class="site-overlay">
+        <div class="overlay-content">
+            <i class="fas fa-info overlay-icon"></i>
+            <h1>Codyshop</h1>
+            <p><strong>Note importante :</strong> Ce site est un projet fictif réalisé à des fins de démonstration.</p>
+            <p>Retrouvez plus d'informations détaillées dans le bas de page (footer).</p>
+            <div class="overlay-loader"></div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <h2 class="logo">CodyShop</h2>
+            <div id="mobile-cart-badge" class="mobile-cart-badge" style="display: none;">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="mobile-cart-count" class="count">0</span>
+            </div>
+            <nav aria-label="Navigation principale">
+             <button aria-controls="main-navigation" aria-expanded="false" aria-label="Ouvrir le menu" id="btn_menu" title="menu de navigation"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+             </button>
+             <div class="nav_content" id="main-navigation" role="navigation">
+                <div class="head-menu">
+                    <button id="close-menu"> &times; </button>
+                    <h2 class="logo-menu">CodyShop</h2>
+                </div>
+              <ul>
+               <li><a href="index.html"><i class="fas fa-home"></i> Accueil </a></li>
+               <li><a href="#products"><i class="fas fa-shop"></i> Produit </a></li>
+               <li><a href="#contact"><i class="fas fa-phone"></i> Contact</a></li>
+               <li>
+                <details>
+                    <summary style="font-size: var(--font-size-xl);">
+                        <i class="fas fa-shopping-cart"></i>
+                        Mon panier
+                        <span id="cart-count" class="cart-count" aria-label="Nombre d'articles dans le panier">0</span>
+                    </summary>
+                    <aside id="cart" class="cart">
+                        <div class="container">
+                            <h2>Votre Panier</h2>
+                            <div id="cart-items">
+                                <!-- Articles du panier -->
+                            </div>
+                            <div id="cart-total">
+                                Total: <span id="total-price">0€</span>
+                            </div>
+                            <button id="checkout-btn">Commander</button>
+                            <div id="checkout-form" style="display: none;">
+                                <h3>Informations de livraison</h3>
+                                <form id="order-form">
+                                    <input type="text" id="name" placeholder="Nom complet" required>
+                                    <input type="email" id="email" placeholder="Email" required>
+                                    <input type="text" id="address" placeholder="Adresse" required>
+                                    <button type="submit">Confirmer la commande</button>
+                                </form>
+                            </div>
+                        </div>
+                    </aside>
+                </details>
+               </li>
+              </ul>
+             </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Équipez-vous avec CodyShop</h1>
+                    <p>Les meilleurs produits tech et gaming à prix imbattables. Livraison express, paiement sécurisé et support client 24/7. Ne manquez pas nos offres exclusives !</p>
+                    <div class="hero-features">
+                        <span><i class="fas fa-truck"></i> Livraison gratuite dès 50€</span>
+                        <span><i class="fas fa-shield-alt"></i> Garantie 2 ans</span>
+                        <span><i class="fas fa-headset"></i> Support technique expert</span>
+                    </div>
+                    <a href="#products" class="cta-btn">Découvrez nos produits</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrousel des produits populaires -->
+        <section class="featured-carousel">
+            <div class="container">
+                <h2>⭐ Produits Vedettes</h2>
+                <p>Découvrez nos best-sellers et nouveautés exclusives</p>
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" aria-label="Produit précédent">‹</button>
+                    <div class="carousel-track" id="carousel-track">
+                        <!-- Les produits populaires seront insérés ici par JavaScript -->
+                    </div>
+                    <button class="carousel-btn next" aria-label="Produit suivant">›</button>
+                </div>
+                <div class="carousel-indicators" id="carousel-indicators">
+                    <!-- Les indicateurs seront générés par JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <div class="container">
+                <h2>Notre Sélection Exclusive</h2>
+                <p>Trouvez l'équipement parfait pour vos besoins : ordinateurs, accessoires gaming, audio premium et bien plus. Utilisez nos filtres pour affiner votre recherche.</p>
+                <div class="filters">
+                    <div class="search-sort">
+                        <div class="search-container" style="position: relative; flex: 1;">
+                            <input type="text" id="search-input" placeholder="Rechercher un produit...">
+                            <div id="search-suggestions" class="search-suggestions" style="display: none;"></div>
+                        </div>
+                        <select id="sort-select">
+                            <option value="name">Trier par nom</option>
+                            <option value="price-low">Prix croissant</option>
+                            <option value="price-high">Prix décroissant</option>
+                            <option value="newest">Nouveautés</option>
+                        </select>
+                    </div>
+                    <div class="categories">
+                        <button class="category-btn active" data-category="all">Tous</button>
+                        <button class="category-btn" data-category="informatique">Informatique</button>
+                        <button class="category-btn" data-category="audio">Audio</button>
+                        <button class="category-btn" data-category="gaming">Gaming</button>
+                    </div>
+                    <div class="advanced-filters">
+                        <label for="brand-apple"><input type="checkbox" id="brand-apple"> Apple</label>
+                        <label for="brand-sony"><input type="checkbox" id="brand-sony"> Sony</label>
+                        <label for="brand-samsung"><input type="checkbox" id="brand-samsung"> Samsung</label>
+                        <label for="brand-logitech"><input type="checkbox" id="brand-logitech"> Logitech</label>
+                        <label for="brand-razer"><input type="checkbox" id="brand-razer"> Razer</label>
+                        <label for="brand-nintendo"><input type="checkbox" id="brand-nintendo"> Nintendo</label>
+                        <label for="brand-bose"><input type="checkbox" id="brand-bose"> Bose</label>
+                    </div>
+                </div>
+                <div class="product-grid" id="product-grid">
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>Ce que disent nos clients satisfaits</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <p>"Livraison ultra-rapide et produits de qualité exceptionnelle. CodyShop est devenu mon e-shop préféré pour le tech !"</p>
+                        <cite>- Marie Dupont, Paris</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Interface intuitive, paiement sécurisé et support réactif. J'ai acheté mon setup gaming complet ici, highly recommended !"</p>
+                        <cite>- Jean Martin, Lyon</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Large choix de produits high-tech à des prix compétitifs. Parfait pour équiper mon entreprise. Service client au top !"</p>
+                        <cite>- Sophie Leroy, Bordeaux</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal pour détails produit -->
+        <div id="product-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modal-content">
+                    <!-- Contenu du modal -->
+                </div>
+            </div>
+        </div>
+
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contactez notre équipe</h2>
+                <p>Besoin d'aide pour choisir votre produit ? Une question sur votre commande ? Notre équipe est là pour vous accompagner.</p>
+                <p>Email: support@codyshop.com</p>
+                <p>Téléphone: 01 23 45 67 89</p>
+                <p>Horaires: Lun-Ven 9h-18h, Sam 10h-17h</p>
+            </div>
+        </section>
+    </main>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>Restez connecté avec CodyShop</h2>
+            <p>Inscrivez-vous à notre newsletter pour être le premier informé des nouvelles arrivées, offres exclusives et conseils tech. Recevez 10% de réduction sur votre première commande !</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre adresse email" required>
+                <button type="submit">Je m'inscris</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Container pour les toasts -->
+    <div class="toast-container" id="toast-container"></div>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CodyShop</h3>
+                    <p>Votre boutique en ligne de confiance pour tous vos besoins technologiques.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="#products">Produits</a></li>
+                        <li><a href="#cart">Panier</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: contact@codyshop.com</p>
+                    <p>Téléphone: 01 23 45 67 89</p>
+                    <p>Adresse: 123 Rue de la Tech, Paris</p>
+                </div>
+            </div>
+            <p class="foot-note" style="color: white;text-align: center;font-size: 12px;">Ce site est un projet fictif crée par <strong>Aldebaran labs </strong> à but démonstratif, il n'y a qu'une page , si vous avez des questions , ou souhaitez recevoir un devis gratuit cliquez <a href="mailto:contact.aldebaranlabs@Gmail.com">contact.aldebaranlabs@Gmail.com</a> ou <strong>sur WhatsApp : <a href="https://wa.me/+243859367449">WhatsApp </a> </strong></p>
+            <div class="footer-bottom" id="footer-bottom">
+                <p>&copy; 2026 CodyShop. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
