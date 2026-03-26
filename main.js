@@ -736,16 +736,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Overlay management
+    // Overlay management - visible only for real visitors with JS enabled
     const overlay = document.getElementById('site-overlay');
     if (overlay) {
+        // Show overlay after minimal delay (content already parsed for bots)
         setTimeout(() => {
-          overlay.classList.add('fade-out');
-          document.body.classList.remove('overlay-active');
+          overlay.style.display = 'block';
+          overlay.setAttribute('aria-hidden', 'false');
+          document.body.classList.add('overlay-active');
+          
+          // Hide after 8 seconds
           setTimeout(() => {
-            overlay.remove();
-          }, 800); // Wait for transition to finish
-        }, 8000); // 8 seconds delay
+            overlay.classList.add('fade-out');
+            document.body.classList.remove('overlay-active');
+            setTimeout(() => {
+              overlay.style.display = 'none';
+              overlay.setAttribute('aria-hidden', 'true');
+            }, 800);
+          }, 8000);
+        }, 100); // 100ms delay - content is already accessible to bots
     }
 });
 
