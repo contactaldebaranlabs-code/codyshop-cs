@@ -1,0 +1,55 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+    <defs>
+        <!-- Gradient moderne bleu-vert -->
+        <linearGradient id="shop-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color: #3b82f6;stop-opacity:1" />
+            <stop offset="50%" style="stop-color: #06b6d4;stop-opacity:1" />
+            <stop offset="100%" style="stop-color: #10b981;stop-opacity:1" />
+        </linearGradient>
+
+        <!-- Gradient pour l'effet 3D -->
+        <radialGradient id="shadow-gradient" cx="50%" cy="80%" r="60%">
+            <stop offset="0%" style="stop-color: #000000;stop-opacity:0.3" />
+            <stop offset="100%" style="stop-color: #000000;stop-opacity:0" />
+        </radialGradient>
+    </defs>
+
+    <!-- Fond subtil -->
+    <circle cx="100" cy="100" r="95" fill="url(#shop-gradient)" opacity="0.05"/>
+    <circle cx="100" cy="100" r="90" fill="none" stroke="url(#shop-gradient)" stroke-width="1" opacity="0.2"/>
+
+    <!-- Panier de courses stylisé -->
+    <g transform="translate(100,85)">
+        <!-- Corps du panier -->
+        <rect x="-25" y="-10" width="50" height="35" rx="3" fill="url(#shop-gradient)" opacity="0.9"/>
+        <rect x="-25" y="-10" width="50" height="35" rx="3" fill="none" stroke="url(#shop-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- Poignées du panier -->
+        <path d="M-20,-15 Q-15,-20 -10,-15" fill="none" stroke="url(#shop-gradient)" stroke-width="3" stroke-linecap="round"/>
+        <path d="M10,-15 Q15,-20 20,-15" fill="none" stroke="url(#shop-gradient)" stroke-width="3" stroke-linecap="round"/>
+
+        <!-- Produits dans le panier (stylisés) -->
+        <circle cx="-15" cy="5" r="4" fill="url(#shop-gradient)" opacity="0.7"/>
+        <circle cx="-5" cy="8" r="3" fill="url(#shop-gradient)" opacity="0.6"/>
+        <circle cx="5" cy="3" r="4" fill="url(#shop-gradient)" opacity="0.8"/>
+        <circle cx="15" cy="7" r="3" fill="url(#shop-gradient)" opacity="0.5"/>
+
+        <!-- Ombres des produits -->
+        <ellipse cx="-15" cy="10" rx="4" ry="1" fill="url(#shadow-gradient)" opacity="0.4"/>
+        <ellipse cx="-5" cy="12" rx="3" ry="1" fill="url(#shadow-gradient)" opacity="0.3"/>
+        <ellipse cx="5" cy="8" rx="4" ry="1" fill="url(#shadow-gradient)" opacity="0.5"/>
+        <ellipse cx="15" cy="11" rx="3" ry="1" fill="url(#shadow-gradient)" opacity="0.3"/>
+    </g>
+
+    <!-- Texte CODY -->
+    <text x="100" y="150" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800"
+          text-anchor="middle" dominant-baseline="middle" fill="url(#shop-gradient)" letter-spacing="2px">
+        CODY
+    </text>
+
+    <!-- Texte SHOP -->
+    <text x="100" y="170" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700"
+          text-anchor="middle" dominant-baseline="middle" fill="url(#shop-gradient)" opacity="0.9" letter-spacing="1px">
+        SHOP
+    </text>
+</svg>
